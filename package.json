@@ -1,0 +1,25 @@
+{
+  "name": "algun_nombre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev_start": "nodemon index.js"
+  },
+  "author": "Ulises Mtz",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0",
+    "gost-cryptography": "^1.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^11.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.7.5",
+    "uuid": "^8.3.2"
+  }
+}
