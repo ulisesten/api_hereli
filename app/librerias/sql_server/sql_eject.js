@@ -8,7 +8,9 @@ const tipoMSSQL = {
     'nvarchar': sql.NVarChar,
     'int': sql.Int,
     'char': sql.Char,
-    'datetime': sql.DateTime
+    'datetime': sql.DateTime,
+    'numeric': sql.Numeric,
+    'decimal': sql.Decimal
 };
 
 const config = settings.getDatabaseConfig();
@@ -92,6 +94,7 @@ class SqlEject {
                 if (!valores[valores_keys[i]]) {
                     console.warn(`Parámetro ${valores[valores_keys[i]].value} está indefinido`);
                 }
+                //console.log('tipo:', valores[valores_keys[i]].type)
                 sp_request.input( `${valores_keys[i]}`, tipoMSSQL[valores[valores_keys[i]].type], `${valores[valores_keys[i]].value}`);
             }
             

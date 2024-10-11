@@ -47,6 +47,10 @@ class Settings extends BaseConfig {
     getExpirationDays() {
         return process.env.EXPIRATION_DAYS;
     }
+
+    getCors() {
+        return this.BACKEND_CORS_ORIGINS;
+    }
 }
 
 module.exports = new Settings();
